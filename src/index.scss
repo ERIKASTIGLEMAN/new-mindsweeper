@@ -1,4 +1,6 @@
 :root {
+  --header-font-size: 1rem;
+
   font: 16px / 1 sans-serif;
 }
 
@@ -7,12 +9,33 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 3rem;
   min-height: 100%;
 }
 
-table,
-th,
-td {
-  border: 1px solid black;
+h2 {
+  color: purple;
+  text-align: center;
+  font-size: 64px;
+}
+main {
+  display: grid;
+  justify-content: center;
+}
+
+ul {
+  height: calc(100vh - 10 * var(--header-font-size));
+  width: calc(100vh - 10 * var(--header-font-size));
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  background-color: aquamarine;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 2px black solid;
+  max-width: 100%;
 }
