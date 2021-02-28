@@ -14,7 +14,7 @@ body {
 }
 
 h2 {
-  color: purple;
+  color: rgb(133, 29, 133);
   text-align: center;
   font-size: 64px;
 }
@@ -28,14 +28,36 @@ ul {
   width: calc(100vh - 10 * var(--header-font-size));
   display: grid;
   grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  background-color: aquamarine;
+  background-color: rgb(132, 88, 160);
 }
 
 ul,
 li {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0.5;
   border: 2px black solid;
   max-width: 100%;
 }
+li {
+  margin: 0;
+  padding: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: x-large;
+}
+
+// button {
+//   display: flex;
+//   align-content: center;
+// }
+// .bomb {
+// }
+
+// .flag{}
+
+// .revealed{}
+
+// .free{}

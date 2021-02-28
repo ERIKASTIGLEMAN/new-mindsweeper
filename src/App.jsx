@@ -1,22 +1,31 @@
-import React, {Component } from 'react'
+import React, { Component } from 'react'
 
+export class App extends Component {
+  state = {
+    board: [
+      [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+      [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+      [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+      [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+      [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+      [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+      [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+      [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+    ],
+  }
 
-export class App extends Component
-{
-  render(){ 
+  render() {
+    const boardGame = this.state.board.map((row, rowIndex) => {
+      return row.map((cell, colIndex) => {
+        return <li key={colIndex}></li>
+      })
+    })
+
     return (
       <div className="gameboard">
         <main>
-          <h2>Minesweeper Game</h2>  
+          <h2>Minesweeper Game</h2>
           <ul>
-            <li>H</li>
-            <li>c</li>
-            <li>c</li>
-            <li>d</li>
-            <li>s</li>
-            <li>f</li>
-            <li>d</li>
-            <li>w</li>
             <li></li>
             <li></li>
             <li></li>
@@ -67,20 +76,24 @@ export class App extends Component
             <li></li>
             <li></li>
             <li></li>
-            <li>f</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
             <li></li>
             <li></li>
             <li></li>
             <li></li>
             <li></li>
           </ul>
-          <footer>
-          </footer>        
+          <footer></footer>
         </main>
       </div>
-   )
- }
+    )
+  }
 }
-
-
-
